@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        border: solid black 1mm;
+        margin: 1mm;
+        padding: 1mm;
+        background-color: yellow;
+        display: flex;
+        flex-direction: row;
+       }
+       .left{
+        border: solid red 1mm;
+        margin: 1mm;
+        padding: 1mm;
+        background-color: beige;
+        height: 170px;
+        width: 170px;
+        display: flex;
+        flex-direction: row;
+       }
+       .right{
+        border: solid blue 1mm;
+        margin: 1mm;
+        padding: 1mm;
+        background-color: burlywood;
+        height: 170px;
+        width: 170px;
+       }
+       img{width: 150px; height: 150px;}
+       @media(max-width:600px) {
+        .container{flex-direction: column;}
+       }
+       @media(max-width:600px){
+        .left{flex-direction: column;}
+       }
+       #ok{ border: solid black 1mm;
+    margin: 1mm;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <p id="ok">table1 -> </p>
+            <p id="ok">table2 -> </p>
+        </div>
+        <div class="right">
+            <img src="3.jpg" alt="ok">
+        </div>
+    </div>
+</body>
+</html>

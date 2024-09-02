@@ -1,0 +1,13 @@
+p{
+    
+    font-style: italic;
+    color: rgb(220, 114, 27);
+    background-color: rgb(243, 105, 190);
+}
+body{
+background-color: rgb(107, 139, 138)  ;
+color: blueviolet !important;
+}
+h1{font-size: larger; color: rgb(98, 203, 174, 226); background-color: chocolate;
+    text-align:center
+}

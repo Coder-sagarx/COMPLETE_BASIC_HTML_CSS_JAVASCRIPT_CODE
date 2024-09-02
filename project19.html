@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+           border: solid black 1mm;
+           
+           background-color: beige; 
+           height: 90vh;
+           width:90vw;
+           display: flex;
+            justify-content: start;
+            align-items: start;
+            margin: 5mm;
+        }
+        .box2{
+            border: solid black 1mm;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+            background-color: blueviolet;
+            color: aqua;
+            margin:4mm;
+            position: relative;
+            animation-name: kalu;  
+            animation-duration: 4s;       
+            animation-delay: 0s;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-direction:alternate;
+    
+        }
+        @keyframes kalu{
+            from{
+                left:0;
+                top:0;
+            }
+            to{
+                left:25cm;
+                 top:0cm;
+            }
+        }
+        .box3{
+            border: solid black 1mm;
+            border-radius: 10px;
+            height: 50px;
+            width: 200px;
+            background-color: blueviolet;
+            color: aqua;
+            margin:4mm;
+            position: relative;
+            animation-name: kalu1;  
+            animation-duration: 4s;       
+            animation-delay: 0ms;
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-direction:alternate-reverse;   
+        }
+        @keyframes kalu1{
+            from{
+                left:0;
+                top:600px;
+            }
+            to{
+                left: 800px;;
+                 top:600px;
+            }
+        }
+        .circle{
+            border: solid black 1mm;
+            height: 50px;
+            width: 50px;
+            border-radius:100px;
+            background-color: blueviolet;
+            color: aqua;
+            position: relative;
+            top:40%;
+            left: 15%;
+            animation-name: kalu3;  
+            animation-iteration-count:infinite;
+            animation-timing-function:ease-in-out;
+            animation-direction:alternate-reverse; 
+            animation-duration: 10s;       
+            animation-delay: 0ms;
+        }
+        @keyframes kalu3{
+            0%{
+                left:0cm;
+                top:0cm;
+            }
+            30%{
+                left: 10cm;
+                top:20cm;
+            }
+            60%{
+                left:20cm;
+                top:3cm;
+            }
+            100%{
+                left:2cm;
+                top:25cm;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            box1
+        </div>
+        <div class="box3">
+            box2
+        </div>
+        <div class="circle">circle</div>
+    </div>
+    
+</body>
+</html>
